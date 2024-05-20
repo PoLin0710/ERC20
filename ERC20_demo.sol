@@ -9,7 +9,7 @@ contract PandaCoin is ERC20 {
     address public owner;
 
     modifier isOwner(address _from){
-        require(owner==_from,"your not owner");
+        require(owner==_from,"Not Owner");
         _;
     }
 
@@ -18,7 +18,7 @@ contract PandaCoin is ERC20 {
     }
 
     function mint(uint256 amount)external isOwner(msg.sender){
-        require(amount+totalSupply()<maxSupply);
+        require(amount+totalSupply()<maxSupply,"The value is illegal");
         _mint(msg.sender, amount);
     } 
 }
