@@ -1,5 +1,7 @@
 # 發行代幣ERC20 
 ## 代幣介紹
+代幣位於：Sepolia Testnet
+
 代幣名稱：PandaCoin
 
 代幣簡稱：PDC
